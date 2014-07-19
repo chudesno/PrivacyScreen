@@ -28,4 +28,16 @@
 		<source-file src="src/ios/AppDelegate+privacyscreen.h"/>
 		<source-file src="src/ios/AppDelegate+privacyscreen.m"/>
 	</platform>
+
+  <!-- wp8 -->
+  <platform name="wp8">
+    <config-file target="config.xml" parent="/*">
+      <feature name="PrivacyScreenPlugin">
+        <param name="wp-package" value="PrivacyScreenPlugin"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/wp8/PrivacyScreenPlugin.cs" />
+  </platform>
 </plugin>
