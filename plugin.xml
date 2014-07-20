@@ -33,7 +33,7 @@
   <platform name="wp8">
     <config-file target="config.xml" parent="/*">
       <feature name="PrivacyScreenPlugin">
-        <param name="wp-package" value="PrivacyScreenPlugin"/>
+        <param name="wp-package" value="PrivacyScreenPlugin" onload="true"/>
         <param name="onload" value="true" />
       </feature>
     </config-file>
