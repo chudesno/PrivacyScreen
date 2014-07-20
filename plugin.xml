@@ -31,6 +31,11 @@
 
   <!-- wp8 -->
   <platform name="wp8">
+   
+    <js-module src="www/PrivacyScreenPlugin.js" name="PrivacyScreenPlugin">
+        <clobbers target="navigator.privacyscreen" />
+    </js-module>
+
     <config-file target="config.xml" parent="/*">
       <feature name="PrivacyScreenPlugin">
         <param name="wp-package" value="PrivacyScreenPlugin" onload="true"/>
